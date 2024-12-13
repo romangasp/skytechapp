@@ -1,0 +1,66 @@
+
+.form-background {
+    background-image: url('/public/contact-us-background.jpeg');
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    padding-left: 150px;
+    flex-direction: column;
+  }
+  
+  .contact-form {
+    background-color: rgba(230, 232, 230,);
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .contact-form h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  .contact-form .MuiFilledInput-root {
+    background-color: #30628B;
+    border-radius: 5px;
+  }
+  
+  .contact-form .MuiInputLabel-root {
+    color: #ffffff;
+  }
+  
+  .submit-button {
+    background-color: #062137;
+    color: white;
+    margin-top: 15px;
+  }
+  
+  .submit-button:hover {
+    background-color: #00a8cc;
+  }
+
+  .title-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-button {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @media (max-width: 768px) {
+    .title-container{
+      color: white;
+    }
+    .form-background {
+      display: flex;
+      padding-left: 0px;
+      align-items: center;
+      height: auto;
+    }
+  }

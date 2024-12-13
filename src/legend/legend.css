@@ -1,0 +1,25 @@
+.legend-section {
+  background-color: #7c8a96;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  gap: 0.8rem;
+
+  h2 {
+    color: white;
+  }
+
+  .image-container img {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .legend-section .image-container img {
+    width: 90%;
+    height: 50%;
+  }
+}
