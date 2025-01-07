@@ -10,14 +10,21 @@
   h2 {
     color: white;
   }
+}
 
-  .image-container img {
-    width: 50%;
+.legend-section .image-container img {
+  width: 50%;
+  height: 50%;
+}
+
+@media (max-width: 768px) {
+  .legend-section .image-container img {
+    width: 90%;
     height: 50%;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .legend-section .image-container img {
     width: 90%;
     height: 50%;

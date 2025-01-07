@@ -1,47 +1,59 @@
 .product-details {
-    background-color: #27496d;
-    text-align: center;
-    padding: 20px;
+  background-color: #27496d;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+
+  .product-item {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    border-radius: 20px;
+    border: solid 1px gray;
+    padding: 20px;
 
-    .product-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 50%;
-        border-radius: 20px;
-        border: solid 1px gray;
-        padding: 20px;
-
-        .product-title {
-            color: gray;
-        }
+    .product-title {
+      color: gray;
     }
+  }
 
-    .buttons-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        width: 30%;
-    }
+  .hamburguer-icon {
+    color: white;
+    z-index: 1001;
+  }
 
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30%;
+  }
+
+  .side-bar {
+    z-index: 1000;
+    position: absolute;
+    height: 100%;
+    background-color: #27496d;
+    opacity: 90%;
+  }
 }
 
 .product-details img {
-    width: 100%;
-    height: auto;
-    /* margin: 20px 0; */
+  width: 100%;
+  height: auto;
 }
 
 .legend-section {
-    background-color: #7c8a96;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2%;
-    gap: 0.8rem;
-    h2 {
-      color: white;
-    }
+  background-color: #7c8a96;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  gap: 0.8rem;
+
+  h2 {
+    color: white;
   }
+}

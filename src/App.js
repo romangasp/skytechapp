@@ -10,16 +10,21 @@ import Form from "./form/form";
 import { Card, CardMedia, useMediaQuery } from "@mui/material";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
+import Legend from "./legend/legend.js";
 
 function App() {
   const isMobile = useMediaQuery("(max-width: 768px)");
-  
+
   return (
     <Router>
       <div>
-      <ConditionalNavbar />
+        <ConditionalNavbar />
         <Routes>
           <Route
             path="/"
@@ -58,31 +63,16 @@ function App() {
                     <ProductsSection />
                   </div>
                 </section>
-                <section className="legend-section" id="about">
-                  <div className="image-container">
-                    <img
-                      src="/skytech-logo2.png"
-                      alt="skytech-logo"
-                      style={{
-                        width: "60%",
-                        height: "60%",
-                        top: "105px",
-                        gap: "0px",
-                        opacity: "0px",
-                      }}
-                    />
-                  </div>
-                  <h2>Somos tu MEJOR aliado tecnológico</h2>
-                  <div></div>
-                </section>
+                <Legend />
                 <section className="about-section" id="about">
                   {isMobile ? (
                     <>
                       <div className="text">
                         <h2>Nosotros</h2>
                         <p>
-                          En SkyTech impulsamos tu mundo digital, te ofrecemos una amplia
-                          gama de productos y servicios para tu empresa..
+                          En SkyTech impulsamos tu mundo digital, te ofrecemos
+                          una amplia gama de productos y servicios para tu
+                          empresa..
                         </p>
                       </div>
                       <Card
@@ -105,8 +95,9 @@ function App() {
 
                       <div className="text">
                         <p>
-                          En SkyTech impulsamos tu mundo digital, te ofrecemos una amplia
-                          gama de productos y servicios para tu empresa..
+                          En SkyTech impulsamos tu mundo digital, te ofrecemos
+                          una amplia gama de productos y servicios para tu
+                          empresa..
                         </p>
                       </div>
                     </>
@@ -128,15 +119,20 @@ function App() {
                             className="images"
                           />
                         </Card>
-                        <div className="text" style={{ flex: 1, marginRight: "2rem" }}>
+                        <div
+                          className="text"
+                          style={{ flex: 1, marginRight: "2rem" }}
+                        >
                           <h2>Nosotros</h2>
                           <p>
-                            En SkyTech impulsamos tu mundo digital, te ofrecemos una
-                            amplia gama de productos y servicios para tu empresa..
+                            En SkyTech impulsamos tu mundo digital, te ofrecemos
+                            una amplia gama de productos y servicios para tu
+                            empresa..
                           </p>
                           <p>
-                            En SkyTech impulsamos tu mundo digital, te ofrecemos una
-                            amplia gama de productos y servicios para tu empresa..
+                            En SkyTech impulsamos tu mundo digital, te ofrecemos
+                            una amplia gama de productos y servicios para tu
+                            empresa..
                           </p>
                         </div>
                       </div>
@@ -147,12 +143,15 @@ function App() {
                   <Form />
                   <ToastContainer />
                 </section>
-                <Networks/>
+                <Networks />
               </>
             }
           />
           <Route path="/product/:productName" element={<ProductDetails />} />
-          <Route path="/product/:productName/:productTitle" element={<Product />} />
+          <Route
+            path="/product/:productName/:productTitle"
+            element={<Product />}
+          />
         </Routes>
       </div>
     </Router>
