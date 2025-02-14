@@ -1,5 +1,5 @@
 import Icon from "@mui/material/Icon";
-import { FaWhatsapp, FaInstagram } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { useMediaQuery } from "@mui/material";
 import "./networks.css";
 
@@ -12,30 +12,17 @@ function Networks() {
           <section className="networks-section" id="about">
             <ul>
               <li>
-                <Icon>mail</Icon>skytech@gmail.com
-              </li>
-              <li>
-                <Icon>location_on</Icon>Avenida xxxx, xxxx
-              </li>
-              <li>
-                {" "}
-                <div className="icon-container">
-                  <FaWhatsapp style={{ color: "#ffffff" }} />
-                </div>
-                +549111233597
+                <Icon>mail</Icon>contacto.skytechapp@gmail.com
               </li>
             </ul>
 
             <ul>
-              <li>
-                <Icon>facebook</Icon>skytech
-              </li>
-              <li>
+            <li>
                 {" "}
                 <div className="icon-container">
-                  <FaInstagram style={{ color: "#ffffff" }} />
+                  <FaWhatsapp style={{ color: "#ffffff" }} />
                 </div>
-                skytech.ar
+                +5491168221996
               </li>
             </ul>
             <div className="image-container">
@@ -44,7 +31,6 @@ function Networks() {
                 alt="skytech-logo"
                 style={{
                   width: "50%",
-                  // height: "80%",
                   top: "105px",
                   gap: "0px",
                   opacity: "0px",
@@ -58,17 +44,7 @@ function Networks() {
           <section className="networks-section" id="about">
             <ul>
               <li>
-                <Icon>mail</Icon>skytech@gmail.com
-              </li>
-              <li>
-                <Icon>location_on</Icon>Avenida xxxx, xxxx
-              </li>
-              <li>
-                {" "}
-                <div className="icon-container">
-                  <FaWhatsapp style={{ color: "#ffffff" }} />
-                </div>
-                +549111233597
+                <Icon>mail</Icon>contacto.skytech@gmail.com
               </li>
             </ul>
 
@@ -86,15 +62,12 @@ function Networks() {
             </div>
 
             <ul>
-              <li>
-                <Icon>facebook</Icon>skytech
-              </li>
-              <li>
+            <li>
                 {" "}
                 <div className="icon-container">
-                  <FaInstagram style={{ color: "#ffffff" }} />
+                  <FaWhatsapp style={{ color: "#ffffff" }} />
                 </div>
-                skytech.ar
+                +549111233597
               </li>
             </ul>
           </section>

@@ -6,6 +6,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 function Form() {
+  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -27,7 +28,7 @@ function Form() {
 
     try {
       const response = await axios.post(
-        "https://app-632745499836.us-central1.run.app/api/sendEmail",
+        `${API_BASE_URL}api/sendEmail`,
         formData
       );
 
