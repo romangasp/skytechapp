@@ -42,7 +42,6 @@ function Form() {
           message: "",
         });
       }
-      // alert(`Error: ${response.data.error || "No se pudo enviar el correo"}`);
     } catch (error) {
       console.error("Error al enviar el formulario:", error);
       const errorMessage =
