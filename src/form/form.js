@@ -79,7 +79,7 @@ function Form() {
           required
         />
         <TextField
-          label="Email"
+          label="E-mail"
           variant="filled"
           size="small"
           fullWidth
